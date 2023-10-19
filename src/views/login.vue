@@ -6,7 +6,7 @@ export default {
 <script setup>
 import { getCurrentInstance, onMounted, reactive, ref } from "vue";
 
-import { useRouter, useRoute } from 'vue-router'
+import { useRouter, useRoute } from "vue-router";
 import { useUserStore } from "@/stores/user";
 
 // 当前实例

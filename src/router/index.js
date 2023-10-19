@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from "vue-router";
 import pinia from "@/stores/pinia";
 import { useUserStore } from "@/stores/user";
 import cookies from "@plugins/modules/cookies";
@@ -10,8 +10,8 @@ const routes = [...constantRoutes, ...asyncRoutes];
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.VITE_PROJECT_BASE), // 或者 createWebHistory(import.meta.env.VITE_PROJECT_BASE)
-  routes: routes
-})
+  routes: routes,
+});
 const whiteList = ["Login", "Page404", "Page401"];
 
 router.beforeEach(async (to, from, next) => {
